@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th *ngFor="let cell of tableHeaders">{{cell}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of eventList">
+        <td>{{row.name}}</td>
+        <td>{{row.date}}</td>
+        <td>{{row.time}}</td>
+        <td>{{row.location.address}}, {{row.location.city}}, {{row.location.country}}</td>
+      </tr>
+    </tbody>
+  </table>
